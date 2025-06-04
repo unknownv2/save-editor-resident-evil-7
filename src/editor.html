@@ -1,0 +1,38 @@
+<template>
+    <require from="libvantage/vantage.css"></require>
+	<header>Player Inventory</header>
+
+    <card label="Player Inventory">
+		<v-button click.delegate="maxAllItemsInInventory(true)">Max All</v-button>
+	</card>
+	<card label="Box Inventory">	
+		<v-button click.delegate="maxAllItemsInInventory(false)">Max All</v-button>  		
+</card>
+<card>
+	<table>
+			<thead>
+					<th>Item</th>
+					<th>Count</th>
+					<th>Inventory</th>
+					<th>Box</th>
+			</thead>
+			<tbody>
+					<td> 
+						<v-selection value.bind="selectedItem" options.bind="availableItems"></v-selection>
+					</td>
+					<td> 
+						<v-number value.bind="itemCount" min="0" max="999"></v-number>
+					</td>					
+					<td>
+						<v-button click.delegate="addToInventory(true)">Add</v-button>  
+					</td>
+					<td>
+						<v-button click.delegate="addToInventory(false)">Add</v-button> 
+					</td>
+	</table>
+</card>	
+	<card>		
+		<v-tree nodes.bind="invNodes" view-model.ref="invTree"></v-tree> 
+	</card>
+
+</template>
