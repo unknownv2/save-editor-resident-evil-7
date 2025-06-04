@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "module": "amd",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types",
+    ]
+  },
+  
+  "exclude": [
+    "node_modules",
+    "aurelia_project",
+    "src/types",
+  ],
+  "filesGlob": [
+    "./src/**/*.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

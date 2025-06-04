@@ -1,0 +1,62 @@
+{
+  "name": "editor-resident-evil-7",
+  "author": "unknown",
+  "description": "RESIDENT EVIL 7 campaign save editor.",
+  "version": "0.1.0",
+  "vantage": {
+    "game": "RESIDENT EVIL 7 biohazard",
+    "scid": "e70c0100-223e-46e4-bfa5-358d26d7aa7d",
+    "thumbnailUrl": "https://store-images.s-microsoft.com/image/apps.59188.13510798887575711.b2c5d03b-ad97-4494-8c6b-6343b5e1d0e8.2486e1e3-9c82-498a-a7b1-0ba1c0506485?w=128&h=128",
+    "name": "Campaign Editor",
+    "containerFilter": "/^SaveData\\d*.+$/",
+    "fileFilter": "85019829"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unknownv2/save-editor-resident-evil-7"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "aurelia-animator-css": "^1.0.4",
+    "aurelia-bootstrapper": "^2.1.1",
+    "big-integer": "^1.6.26",
+    "bluebird": "^3.5.1",
+    "crc-32": "^1.1.1",
+    "egoroof-blowfish": "^2.0.0",
+    "libvantage": "^0.2.2",
+    "requirejs": "^2.3.5",
+    "text": "github:requirejs/text#latest",
+    "tslib": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.52",
+    "aurelia-cli": "^0.32.0",
+    "aurelia-testing": "^1.0.0-beta.4.0.0",
+    "aurelia-tools": "^1.0.0",
+    "browser-sync": "^2.23.2",
+    "connect-history-api-fallback": "^1.5.0",
+    "debounce": "^1.1.0",
+    "event-stream": "^3.3.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-changed-in-place": "^2.3.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-notify": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-tslint": "^5.0.0",
+    "gulp-typescript": "^3.2.3",
+    "gulp-watch": "^4.3.11",
+    "html-minifier": "^3.5.8",
+    "minimatch": "^3.0.4",
+    "through2": "^2.0.3",
+    "tslint": "^3.11.0",
+    "typescript": "^2.6",
+    "uglify-js": "^3.3.4",
+    "vinyl-fs": "^2.4.3"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/aurelia build --env prod",
+    "watch": "./node_modules/.bin/aurelia run --watch"
+  }
+}
